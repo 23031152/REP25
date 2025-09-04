@@ -99,8 +99,8 @@ public class CajeroView {
      * @param <T> Tipo del objeto a mostrar
      * @param mensaje Mensaje u objeto a mostrar
      */
-    public void mostrarMensaje(String mensaje){
-        System.out.println("==================="+mensaje);
+    public <T> void mostrarMensaje(T mensaje) {
+        System.out.println("===================" + mensaje);
     }
      /**
      * Solicita al usuario el número de cuenta destino para realizar una transferencia.
