@@ -1,13 +1,16 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package Views;
 
+import Controllers.CajeroController;
+import Models.CajeroModel;
 /**
- *
- * @author ander
+ * Clase principal que inicia el sistema del cajero automático.
  */
 public class CajeroAutomatico {
-    
+    public static void main(String[] args) {
+        CajeroModel model = new CajeroModel();
+        CajeroView view = new CajeroView();
+        CajeroController controller = new CajeroController(model,view);
+        controller.iniciarSistema();    
+    }
 }
